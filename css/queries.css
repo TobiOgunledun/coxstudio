@@ -1,0 +1,51 @@
+@media (min-width:992px){
+   
+    nav{position: fixed;top: 0;left: 5vw;width: 90vw;height: auto;margin: 0 auto;border-radius: .8em;padding: 0 1em;animation:  nav .8s forwards;animation-delay: 4s;}
+    nav ul{position: relative;top: 0;right: 1.6%;width: 100%;height: auto;display: flex;flex-direction: row;justify-content: space-between;align-items: center;background: none;
+        backdrop-filter: none;box-shadow: none;padding: 0 1em; margin: 0 auto;transition: none;}
+    nav ul .logo{display: block;}
+    nav ul li a{font-size: var(--normal);padding: 0;color: #fff;}
+    nav ul li a.active::before{background: #000;width: 85%;}
+    #open, #close, #back{display: none;}
+    .header_text{
+        top:30%;left:10vw;
+        width: 50%;
+    }
+    /* .header_text h1{
+        font-size: 3em;
+    } */
+    section{min-height:auto;max-height: 100vh; outline: hidden;}
+    section.contact{overflow: hidden}
+    .container{width:90vw; margin-left:-1vw; }
+    .content_text{margin-right: -5vw;margin-bottom: 0;width: 22em;}
+    .contact-text h1{
+        font-size: 3em;}
+    .contact_container{ padding: 1em 0;}
+    .contact-text, .contact_form{
+        width: 30em;
+    }
+}
+
+@media (min-width: 768px) and (max-width:992px){
+    .logo{
+        width:3em;
+        transform: translateY(2em);
+    }
+    nav{position: absolute;top: 0;left: 5vw;width: 90vw;height: auto;margin: 0 auto;border-radius: .8em;padding: 0 1em;animation:  nav .8s forwards;animation-delay: 4s;}
+    nav ul{position: relative;top: 0;right: 1.6%;width: 100%;height: auto;display: flex;flex-direction: row;justify-content: space-between;align-items: center;background: none;
+        backdrop-filter: none;box-shadow: none;padding: 0 1em; margin: 0 auto;transition: none;}
+    nav ul .logo{display: block;}
+    nav ul li a{font-size: var(--normal);padding: 0;color: #fff;}
+    nav ul li a.active::before{background: #000;width: 85%;}
+    #open, #close, #back{display: none;}
+    .header_text{
+        top:50%;left:10vw;
+    }
+    section{min-height:auto;max-height: 100vh; outline: hidden;}
+    .content_text{margin-bottom: -10vh;width: 20em;}
+    .contact-text h1{
+        font-size: 3em;}
+    .contact-text, .contact_form{
+        width: 32em;
+    }
+}

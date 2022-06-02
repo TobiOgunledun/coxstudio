@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <title>Andicox Studios</title>
+
+    <!-- ::::::LINKS:::::: -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link type="text/css" rel="stylesheet" href="css/swiper-bundle.min.css">
+    
+    <!-- :::::ICONS LINK FROM LOCAL TEMPLATE SOURCE OFFLINE:::::: -->
+	<link rel="stylesheet" href="file:///C:/Users/User/Desktop/iTins/icons/fontawesome-free-6.1.1-web/css/all.css">
+
+
+    <!-- :::::::::::ICONS-LINK ONLINE:::::::::::::::::: -->
+    <script src="https://kit.fontawesome.com/2bbbf54a3f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="home" id="home">
+        <!-- <img src="./img/port1.png" alt="" id="home_bkg"> -->
+        <video src="./img/vid1.mp4" id="home_bkg" loop muted autoplay></video>
+        <div class="overlay"></div>
+
+        <div class="header_text">
+            <p>
+                Welcome to 
+            </p>
+            <h1>
+                andicox studios
+            </h1>
+            <p>
+                We are known for providing Services in Game development
+                (including NFT games), 3D animation and Virtual Production
+            </p>
+
+            <button> contact us</button>
+        </div>
+        
+    </header>
+    <nav>
+        <i class="fas fa-bars" id="open" onclick="showMenu()"></i>
+        <ul class="nav-menu" id="nav-menu">
+            <i class="fas fa-times" id="close" onclick="hideMenu()"></i>
+            <li><a href="#home" onclick="showActive()" class="active">Home</a></li>
+            <li><a href="#service" onclick="showActive()">services</a></li>
+            <div class="logo" id="logo">
+                <a href="index.html"><img src="img/myLogo.svg" alt=""></a>
+            </div>
+            <li><a href="#portfolio" onclick="showActive()">portfolio</a></li>
+            <li><a href="#contact" onclick="showActive()">contact</a></li>
+
+            <!-- <i class="fas fa-chevron-left" id="back" onclick="history.back()"></i> -->
+
+
+        </ul>
+    </nav>
+
+    <section class="service" id="service">
+
+        <div class="container">
+            <h1>
+                our Services
+            </h1>
+            <div class="content" id="content">
+                <div class="content_text" id="content_text">
+                    <p>
+                    We specialise in the creation of video games and are committed to 
+                    3D, the visual, realism and gameplay quality of our games which allows
+                    us to use Unreal engine to develop high quality products and performance 
+                    flexibility.<br>
+                    We also provide training, porting and publishing services to third parties.
+                    We give our all to every project, viewing it as an exciting task to be met 
+                    with passion, perseverance and sincerity.
+                    </p>
+                    
+                </div>
+
+                <div class="content_image" id="content_img">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+            <button id="button" onclick="changeSlide()">Next</button>
+
+            <div class="content2" id="content2">
+                <!-- <div class="service_head">
+                    <p>
+                        There are numerous advantages to working with us.
+                        Take a look at the major services we provide.
+                    </p>
+                </div> -->
+                
+                <div class="services">
+                    <div class="box">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h2>
+                            game development
+                        </h2>
+                        <div class="service_details">
+                            <p>
+                                We can make games on practically any platform and with almost any technolgy including NFT
+                                games but we specialise in Unreal engine and all the platforms it supports.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box" style="animation-delay: .1s;">
+                        <i class="fa-solid fa-vr-cardboard"></i>
+                        <h2>
+                            virtual production
+                        </h2>
+                        <div class="service_details">
+                            <p>
+                               We offer a complete technical & production solutioin to help our clients with difficult 
+                               production that uses the XR workflow. <br><br><br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box" style="animation-delay: .15s;">
+                        <i class="fas fa-cube"></i>
+                        <h2>
+                            3D <br>animation
+                        </h2>
+                        <div class="service_details">
+                            <p>
+                                We create splendid characters with engaging stories. We offer a wide variety of services
+                                in 3D animation/modeling. If you are looking to outsource your project, we can help.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box" style="animation-delay: .2s;">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>
+                            web <br>design
+                        </h2>
+                        <div class="service_details">
+                            <p>
+                                We create amazing custom website with a variety of internet marketing methods.
+                                We have a unique way of working that allows us to compete on pricing with other web design
+                                firms.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <button id="button2" onclick="changeSlide2()">Previous</button>
+        </div>
+        
+        
+        
+    </section>
+
+    <section class="portfolio" id="portfolio">
+
+        <div class="container">
+            <h1>
+                portfolio
+            </h1>
+
+
+            <div class="container_wrap">
+
+                <div class="port lookbook" id="port">
+                    <i class="fas fa-greater-than" id="right" ></i>
+                    <i class="fas fa-less-than" id="left" ></i>
+
+                   <div class="port-box slider">
+                             <img src="img/port2.png" alt="" id="firstImage" class="image"> 
+                             <img src="img/port2.png" alt="" id="" class="image"> 
+                             <img src="img/port2.png" alt="" id="" class="image"> 
+                             <img src="img/port2.png" alt="" id="" class="image"> 
+                             <img src="img/port4.png" alt="" id="" class="image"> 
+                             <img src="img/port2.png" alt="" id="" class="image"> 
+                             <img src="img/port2.png" alt="" id="" class="image"> 
+                             <img src="img/port2.png" alt="" id="" class="image"> 
+                             <img src="img/port2.png" alt="" id="" class="image"> 
+                             <img src="img/port2.png" alt="" id="finalImage"> 
+                     </div>
+               <!-- <div class="port-box">
+                <img src="img/port2.png" alt="" id="finalImage">  -->
+       </div>
+
+                    
+                               
+                        
+                </div>
+                
+                 
+             </div>
+        </div>
+        
+    </section>
+
+
+
+    <section class="contact" id="contact">
+           
+        <div class="container">
+            <h1>
+                Contact us
+            </h1>
+            
+            <div class="contact_container">            
+                <div class="contact-text">
+                    <h1>
+                        get in touch
+                    </h1>
+                    <p>
+                        To contact us about any ideas, please use the form and send  us an email. 
+                        We'd be delighted to hear from you.
+                    </p>
+    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/oluwasegun-coker-b66241182"> <i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/andicox_studios"><i class="fab fa-instagram"></i></a>
+                        <a href="https://info@andicoxstudios.com/"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/+234 703 077 0313"><i class="fab fa-whatsapp"></i></a>
+    
+                        <p style="font-size: 1em;">
+                            <br><br>
+                            &copy 2022. Andicox Studio. <br> <br>
+                             Web Engineer: 
+                            <a href="https://tobiogunledun.github.io/portfolio/" style="color: #59cece;text-decoration:none">
+                                 Oluwatobi
+                            </a> 
+                        </p>
+                    </div>
+    
+                </div>
+    
+                <div class="contact_form">
+                    <form action="https://formspree.io/f/mqknnpda" method="POST">
+                        <p>Name:</p>
+                        <input type="text" name="name" placeholder="Optimus Prime" required>
+                        <p>email:</p>
+                        <input type="email" name="email" placeholder="@mail.com" required>
+                        <p>phone number:</p>
+                        <input type="tel" name="mobile" placeholder="+" required>
+                        <p>company:</p>
+                        <input type="text" name="company">
+                        <p>message</p>
+                        <textarea name="message" placeholder="How can we be of help?" required></textarea>
+                        <input type="submit" value="Send Message">
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    
+
+
+    <script type="application/javascript" src="js/swiper-bundle.min.js"></script>
+
+    <script src="js/code.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
+
+@font-face {
+    font-family: "Equinox Bold";
+    src: url(/Equinox_Typeface_Dfonts.org/Webfonts/Equinox\ Bold.woff);
+}
+@font-face {
+    font-family: "Equinox Regular";
+    src: url(/Equinox_Typeface_Dfonts.org/Webfonts/Equinox\ Regular.woff);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior:smooth;
+    max-width: 100vw;
+    overflow-x: hidden;
+    outline: hidden;
+}
+:root{
+    --main-color: #6ef0f0;
+    --overlay: rgba(0, 0, 0, 0.4);
+    --normal: 1.2em;
+    --medium: 1.5em;
+    --large: 1.8em;
+}
+video{width: 100%;height: fit-content;object-fit: cover;}
+body{font-family: 'Raleway', sans-serif;color: #fff;overflow-x: hidden; outline: hidden;background: #000;box-sizing: border-box;position: relative;font-family: 'Raleway', sans-serif;}
+img{ width: 100%;height: fit-content;object-fit: cover;}
+section{width: 100vw; height:auto; min-height: fit-content;position: relative;padding:1em;}
+section.service{width:100%; height: fit-content; background:url("/img/bkg1.png");background-position: center;background-size: cover; background-attachment: fixed;}
+section.contact{width:100%; min-height: 100vh; background:url("/img/drone.png");background-position: center;background-size: cover; background-attachment: fixed;}
+section.portfolio{width:100%; height: fit-content; }
+
+.container h1{color: #6ef0f0;font-size: 2.5em;text-transform: uppercase;text-align: center;padding-bottom:1em;
+    font-family: "Equinox Bold";
+}
+.container{width:85vw;
+    height: fit-content;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 1em;
+    position:relative; 
+    transform: translateX(4vw);
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 2em 0;
+    /* transform: rotate(-90deg);animation: page 2s forwards;animation-delay: 3s; */
+}
+
+.logo{
+    width:5em;
+    height:5em;
+    cursor: pointer;
+}
+#home_bkg{position: absolute;top: 0;left: 0;width: 100vw;height:100vh;}
+.overlay{position: absolute;top: 0;left: 0;width: 100vw;height:100vh;background:#000;opacity: 0.5;}
+header{width: 100vw; height: 100vh;overflow-x: hidden;position: relative; top: 0;left:0;}
+.header_text{position: absolute;top: 50%;left: 5vw;width: 100%;margin-bottom:1em;}
+.header_text p:first-child{text-transform: uppercase;font-size: var(--normal);padding-bottom: .6em;letter-spacing: 1em;opacity: .9;}
+.header_text p{width: 90%;font-size: var(--normal);padding: .6em 0;line-height: 120%;}
+.header_text h1{color: #6ef0f0;font-size: 3em;text-transform: uppercase;
+    /* transform: scale(0) translateX(-200vw); */
+    font-family: "Equinox Bold";animation: third 5s forwards alternate;}
+button{margin: 1em 0;padding: .8em 1em;text-transform: uppercase;background: rgba(89, 206, 206, 0.2);color: #fff;border-radius: .5em;border: 2px solid #6ef0f0;cursor: pointer;transition:  .5s ease-in-out;}
+button:hover{background: #6ef0f0;box-shadow: 2px 3px 15px rgba(89, 206, 206, 0.644);}
+nav{z-index: 100;position: relative;opacity: 1;}
+nav ul{position: fixed;top: 0;right: -100%;background: rgba(89, 206, 206, 0.2);box-shadow: 0 4px 15px rgba(89, 206, 206, 0.2);backdrop-filter: blur(5px);
+    width: 80vw;height: 100vh;display: flex;flex-direction: column;gap: 1em;justify-content: center;align-items: center;transition: all 1s ease-in-out;}
+nav ul li{list-style: none;padding-top: 1em; }
+nav ul li a{text-decoration: none;text-transform: uppercase;font-size: var(--large);padding-right:  1em;color: #000;position: relative;letter-spacing: 10px;font-family: "Equinox Regular";transition: color 1s ease;}
+nav ul li a:hover{color:#6ef0f0;}
+nav ul .logo{display: none;}
+nav i{position: fixed;top: 2%;right: 2%;font-size: var(--medium);background: transparent;color: var(--main-color);text-align: center;width: 1.2em;height: 1.2em;cursor: pointer;border-radius: 50%;display: block;}
+#open{animation: menu 1s infinite;}
+#close{position: absolte; top: 0; right: 5%;color: #6ef0f0;margin-top: 1em;padding: .15em .2em;background: rgba(0, 0, 0, 0.4);}
+#back{position: absolute;left: 5%;bottom: 2%;color: #6ef0f0;margin-top: 1em;padding: .15em .2em;background: rgba(0, 0, 0, 0.4);}
+
+
+
+
+#button2{display: none;}
+.container button{position:relative;
+    color: #fff;
+    background: transparent;
+    margin-top:1em;
+    margin-left: 1em;
+    padding: .5em .8em;
+    border: 1px solid #6ef0f0;
+    cursor: pointer;
+}
+.content{padding: 1em auto;width: 95%;margin: 0 auto;display: flex;flex-wrap: wrap;justify-content: center;align-items: center;}
+.content_text{background: rgba(0, 0, 0, 0.4);padding: 1em 2em;border-radius: 1em;margin-bottom: -5vh;width: 15em;z-index: 1;transition: all 2s ease; 
+    transform: translateX(-100vw);
+    animation: text 1.5s forwards;
+}
+.content_image{box-shadow: 0 8px 20px #1b1b1b;border-radius: .5em;max-width: 40em;text-align: center;transition: all 2s ease;
+    transform: translateX(100vw);
+    animation: text_img 1.5s forwards;
+}
+.content_image:hover{z-index: 2;transform: scale(1.02);}
+
+.content2{padding: 1em auto;width: 95%;margin: 0 auto;}
+.services{display: flex;gap:1em;flex-wrap: wrap;justify-content: center;align-items: center;padding-bottom: 2em;margin:0 auto;}
+.service_head{text-align: center;margin-bottom: 2em;}
+.box{max-width: 15em;background: rgba(0, 0, 0, 0.4);padding: 1em;text-align: center;
+    transform: translateX(-100vw);
+    animation: serve_box 1.5s forwards;
+    animation-delay: .05s;
+}
+.box:hover i{transform:rotateY(180deg);
+}
+.box i{color:#6ef0f0;font-size: var(--medium);padding-bottom: .5em;transition: all 1s ease;}
+.box h2{padding: .6em 0;color: #6ef0f0;text-transform: uppercase;font-family: "Equinox Regular";}
+
+
+.port{
+    /* background: red; */
+    padding:1em;
+}
+.port i{
+    position: absolute;
+    top:50%;
+    color: #59cece94;
+    transition: color 1s ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+}
+.port i:hover{
+    color: #6ef0f0;
+}
+.port i#right{
+    position: absolute;
+    right: 0;
+    font-size: 2em;
+}
+.port i#left{
+    position: absolute;
+    left: 0;
+    font-size: 2em;
+}
+.port-box{
+   width: 100%;
+    height: 60vh;
+   
+    overflow: hidden;
+    padding: 1em 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.port-box img:hover{
+    transform: scale(1.05);
+}
+/* .port-box .img{
+    height: 100%;
+    overflow: hidden;
+} */
+.port-box img{
+    /* width: 100%; */
+    border-radius: 1em;
+    min-width: 20em;
+    border: 2px solid #59cece;
+    box-shadow: 0px 5px 15px rgba(89, 206, 206, 0.2);
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 1s ease;
+    
+
+}
+
+
+
+
+.contact_container{ display: flex;flex-wrap:wrap;justify-content: center;align-items: flex-start;margin:5vh auto;gap:2em;
+    /* transform:translateY(-200vh);
+    animation: page2 2s forwards;
+    animation-delay: 3s; */
+  }
+
+.contact-text{
+    min-width: 15em;
+    padding: 1em;
+}
+.contact-text h1{
+    font-size: 2.5em;
+    text-transform: capitalize;
+    color: #6ef0f0;
+    text-align: left;
+}
+.contact-text p{
+    font-size: var(--normal);
+    padding: 1em 0;
+    padding-right: 1em;
+
+}
+.contact-text .social-links a i{
+    font-size: 1.4em;
+    margin-right: .5em;
+    color: #6ef0f0;
+    transition: all 1s ease;
+}
+.contact-text .social-links a i:hover{
+    transform: translateY(-2vh);
+    box-shadow: 0 5px 15px rgba(89, 206, 206, 0.2);
+}
+.contact_form{
+    min-width: 15em;
+    padding: 1em;
+}
+.contact_form input, .contact_form textarea{
+    margin: .5em auto;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.4);
+    color: azure;
+    font-size: 1.2em;
+    font-weight: 200;
+    padding: .5em;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.contact_form input[type=submit]{
+    width: 80%;
+    transform: translateX(10%);
+    background-color: rgba(89, 206, 206, 0.2);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+.contact_form input[type=submit]:hover{
+    background: #6ef0f0;
+    box-shadow: 0 5px 15px rgba(89, 206, 206, 0.2);
+}
+.contact_form p{
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes text{
+    100%{
+        transform: none;
+    }
+}
+@keyframes text_img{
+    100%{
+        transform: none;
+    }
+}
+
+@keyframes serve_box{
+    100%{
+        transform: none;
+    }
+}
